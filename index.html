@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Transport - Reliable Trucking Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>AB Transport</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" data-translate="nav.home">Home</a></li>
+                <li><a href="#about" data-translate="nav.about">About Us</a></li>
+                <li><a href="#services" data-translate="nav.services">Services</a></li>
+                <li><a href="#location" data-translate="nav.location">Location</a></li>
+                <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+            </ul>
+            <div class="language-selector">
+                <div class="custom-select">
+                    <div class="select-selected">
+                        <img src="img/united_kingdom.png" alt="EN" class="flag-icon">
+                        <span>EN</span>
+                    </div>
+                    <div class="select-items select-hide">
+                        <div class="select-item" data-value="en">
+                            <img src="img/united_kingdom.png" alt="EN" class="flag-icon">
+                            <span>EN</span>
+                        </div>
+                        <div class="select-item" data-value="hr">
+                            <img src="img/croatia.png" alt="HR" class="flag-icon">
+                            <span>HR</span>
+                        </div>
+                        <div class="select-item" data-value="it">
+                            <img src="img/italy.png" alt="IT" class="flag-icon">
+                            <span>IT</span>
+                        </div>
+                        <div class="select-item" data-value="de">
+                            <img src="img/germany.png" alt="DE" class="flag-icon">
+                            <span>DE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">
+                <span class="typing-text" data-translate="hero.title">Reliable Transportation</span>
+                <br><span data-translate="hero.subtitle">For Your Business</span>
+            </h2>
+            <p class="hero-subtitle" data-translate="hero.description">Professional trucking services with a commitment to excellence and on-time delivery</p>
+            <a href="#contact" class="cta-button" data-translate="hero.cta">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-translate="about.title">About AB Transport</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-translate="about.paragraph1">With years of experience in the transportation industry, AB Transport has built a reputation for reliability, safety, and exceptional service. Our small fleet allows us to provide personalized attention to every shipment.</p>
+                    <p data-translate="about.paragraph2">We specialize in regional and local transportation, ensuring your goods reach their destination safely and on schedule. Our team of professional drivers is dedicated to maintaining the highest standards of service.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p data-translate="about.years">Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>8</h3>
+                            <p data-translate="about.fleet">Vehicle Fleet</p>
+                        </div>
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p data-translate="about.delivery">On-Time Delivery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="img/semi-truck.jpg" alt="Our Fleet">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-translate="services.title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🚚</div>
+                    <h3 data-translate="services.freight.title">Freight Transportation</h3>
+                    <p data-translate="services.freight.description">Reliable freight transportation services for businesses of all sizes. We handle your cargo with care and deliver on time.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3 data-translate="services.local.title">Local Delivery</h3>
+                    <p data-translate="services.local.description">Fast and efficient local delivery services within the region. Perfect for time-sensitive shipments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏭</div>
+                    <h3 data-translate="services.warehouse.title">Warehouse Logistics</h3>
+                    <p data-translate="services.warehouse.description">Comprehensive warehouse and logistics solutions to streamline your supply chain operations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3 data-translate="services.insured.title">Insured Shipments</h3>
+                    <p data-translate="services.insured.description">All shipments are fully insured for your peace of mind. Your cargo is protected throughout transit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title" data-translate="location.title">Our Location</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3 data-translate="location.subtitle">Visit Our Headquarters</h3>
+                    <div class="info-item">
+                        <strong data-translate="location.address">Address:</strong>
+                        <p data-translate="location.addressText">KUKULJANOVO, Kukuljanovo 176</p>
+                    </div>
+                    <div class="info-item">
+                        <strong data-translate="location.hours">Operating Hours:</strong>
+                        <p data-translate="location.hoursText">Monday - Friday: 6:00 AM - 8:00 PM<br>Saturday: 7:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                    </div>
+                    <div class="info-item">
+                        <strong data-translate="location.serviceArea">Service Area:</strong>
+                        <p data-translate="location.serviceAreaText">We serve the entire metropolitan area and surrounding regions within a 200-mile radius.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-translate="contact.title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-translate="contact.subtitle">Get In Touch</h3>
+                    <div class="contact-item">
+                        <strong data-translate="contact.email">Email:</strong>
+                        <p>
+                            <span class="email-obfuscated">info</span>
+                            <span style="display:none;">@</span>
+                            <span class="email-obfuscated">abtransport.com</span>
+                        </p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📧</a>
+                        <a href="#" class="social-link">📱</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-translate="contact.form.name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="contact.form.email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-translate="contact.form.phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-translate="contact.form.subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="contact.form.message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button" data-translate="contact.form.submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-translate="footer.company">AB Transport</h3>
+                    <p data-translate="footer.description">Your trusted partner in transportation and logistics services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.quickLinks">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" data-translate="nav.home">Home</a></li>
+                        <li><a href="#about" data-translate="nav.about">About Us</a></li>
+                        <li><a href="#services" data-translate="nav.services">Services</a></li>
+                        <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.contactInfo">Contact Info</h4>
+                    <p>KUKULJANOVO, Kukuljanovo 176<br>
+                    Email: <span class="email-obfuscated">info</span>@<span class="email-obfuscated">abtransport.com</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer.copyright">&copy; 2024 AB Transport. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.json"></script>
+    <script src="script.js"></script>
+</body>
+</html>
