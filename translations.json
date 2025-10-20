@@ -16,7 +16,7 @@
     "about": {
       "title": "About AB Transport",
       "paragraph1": "With years of experience in the transportation industry, AB Transport has built a reputation for reliability, safety, and exceptional service. Our small fleet allows us to provide personalized attention to every shipment.",
-      "paragraph2": "We specialize in regional and local transportation, ensuring your goods reach their destination safely and on schedule. Our team of professional drivers is dedicated to maintaining the highest standards of service.",
+      "paragraph2": "We specialize in domestic and international transportation, ensuring your goods reach their destination safely and on schedule. Our team of professional drivers is dedicated to maintaining the highest standards of service.",
       "years": "Years Experience",
       "fleet": "Vehicle Fleet",
       "delivery": "On-Time Delivery"
@@ -33,7 +33,7 @@
       },
       "warehouse": {
         "title": "Warehouse Logistics",
-        "description": "Comprehensive warehouse and logistics solutions to streamline your supply chain operations."
+        "description": "Comprehensive warehouse and logistics solutions to streamline your supply chain operations, including transshipment and reloading services."
       },
       "insured": {
         "title": "Insured Shipments",
@@ -95,7 +95,7 @@
     "about": {
       "title": "O AB Transport",
       "paragraph1": "S godinama iskustva u prijevozništvu, AB Transport je izgradio reputaciju pouzdanosti, sigurnosti i izvanredne usluge. Naša mala flota omogućuje nam da pružamo personaliziranu pažnju svakoj pošiljci.",
-      "paragraph2": "Specijalizirani smo za regionalni i lokalni prijevoz, osiguravajući da vaša roba stigne na odredište sigurno i u planiranom vremenu. Naš tim profesionalnih vozača posvećen je održavanju najviših standarda usluge.",
+      "paragraph2": "Specijalizirani smo za domaći i međunarodni prijevoz, osiguravajući da vaša roba stigne na odredište sigurno i u planiranom vremenu. Naš tim profesionalnih vozača posvećen je održavanju najviših standarda usluge.",
       "years": "Godine Iskustva",
       "fleet": "Vozni Park",
       "delivery": "Isporuka na Vrijeme"
@@ -110,10 +110,10 @@
         "title": "Lokalna Dostava",
         "description": "Brze i učinkovite usluge lokalne dostave unutar regije. Savršeno za pošiljke osjetljive na vrijeme."
       },
-      "warehouse": {
-        "title": "Skladišna Logistika",
-        "description": "Sveobuhvatna skladišna i logistička rješenja za poboljšanje vaših operacija opskrbnog lanca."
-      },
+        "warehouse": {
+          "title": "Skladišna Logistika",
+          "description": "Sveobuhvatna skladišna i logistička rješenja za poboljšanje vaših operacija opskrbnog lanca, uključujući usluge pretovara i utovara."
+        },
       "insured": {
         "title": "Osigurane Pošiljke",
         "description": "Sve pošiljke su u potpunosti osigurane za vaš mir. Vaš teret je zaštićen tijekom cijelog prijevoza."
@@ -174,7 +174,7 @@
     "about": {
       "title": "Chi Siamo AB Transport",
       "paragraph1": "Con anni di esperienza nel settore dei trasporti, AB Transport ha costruito una reputazione di affidabilità, sicurezza e servizio eccezionale. La nostra piccola flotta ci permette di fornire attenzione personalizzata a ogni spedizione.",
-      "paragraph2": "Ci specializziamo in trasporti regionali e locali, garantendo che le vostre merci raggiungano la destinazione in sicurezza e secondo programma. Il nostro team di autori professionisti è dedicato a mantenere i più alti standard di servizio.",
+      "paragraph2": "Ci specializziamo in trasporti domestici e internazionali, garantendo che le vostre merci raggiungano la destinazione in sicurezza e secondo programma. Il nostro team di autori professionisti è dedicato a mantenere i più alti standard di servizio.",
       "years": "Anni di Esperienza",
       "fleet": "Parco Veicoli",
       "delivery": "Consegna Puntuale"
@@ -191,7 +191,7 @@
       },
       "warehouse": {
         "title": "Logistica Magazzino",
-        "description": "Soluzioni complete di magazzino e logistica per ottimizzare le operazioni della vostra catena di approvvigionamento."
+        "description": "Soluzioni complete di magazzino e logistica per ottimizzare le operazioni della vostra catena di approvvigionamento, inclusi servizi di trasbordo e ricarica."
       },
       "insured": {
         "title": "Spedizioni Assicurate",
@@ -253,7 +253,7 @@
     "about": {
       "title": "Über AB Transport",
       "paragraph1": "Mit Jahren Erfahrung in der Transportbranche hat AB Transport einen Ruf für Zuverlässigkeit, Sicherheit und herausragenden Service aufgebaut. Unsere kleine Flotte ermöglicht es uns, jede Sendung persönliche Aufmerksamkeit zu widmen.",
-      "paragraph2": "Wir spezialisieren uns auf regionalen und lokalen Transport und stellen sicher, dass Ihre Waren sicher und planmäßig ihr Ziel erreichen. Unser Team professioneller Fahrer ist der Aufrechterhaltung höchster Service-Standards verpflichtet.",
+      "paragraph2": "Wir spezialisieren uns auf inländischen und internationalen Transport und stellen sicher, dass Ihre Waren sicher und planmäßig ihr Ziel erreichen. Unser Team professioneller Fahrer ist der Aufrechterhaltung höchster Service-Standards verpflichtet.",
       "years": "Jahre Erfahrung",
       "fleet": "Fuhrpark",
       "delivery": "Pünktliche Lieferung"
@@ -270,7 +270,7 @@
       },
       "warehouse": {
         "title": "Lagerlogistik",
-        "description": "Umfassende Lager- und Logistiklösungen zur Optimierung Ihrer Lieferkettenoperationen."
+        "description": "Umfassende Lager- und Logistiklösungen zur Optimierung Ihrer Lieferkettenoperationen, einschließlich Umschlag- und Umladungsdiensten."
       },
       "insured": {
         "title": "Versicherte Sendungen",
