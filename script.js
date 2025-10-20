@@ -1,337 +1,51 @@
-// Embedded translations to avoid fetch issues
-const translationsData = {
-    "en": {
-        "nav": {
-            "home": "Home",
-            "about": "About Us",
-            "services": "Services",
-            "location": "Location",
-            "contact": "Contact"
-        },
-        "hero": {
-            "title": "Reliable Transportation",
-            "subtitle": "For Your Business",
-            "description": "Professional trucking services with a commitment to excellence and on-time delivery",
-            "cta": "Get In Touch"
-        },
-        "about": {
-            "title": "About AB Transport",
-            "paragraph1": "With years of experience in the transportation industry, AB Transport has built a reputation for reliability, safety, and exceptional service. Our small fleet allows us to provide personalized attention to every shipment.",
-            "paragraph2": "We specialize in regional and local transportation, ensuring your goods reach their destination safely and on schedule. Our team of professional drivers is dedicated to maintaining the highest standards of service.",
-            "years": "Years Experience",
-            "fleet": "Vehicle Fleet",
-            "delivery": "On-Time Delivery"
-        },
-        "services": {
-            "title": "Our Services",
-            "freight": {
-                "title": "Freight Transportation",
-                "description": "Reliable freight transportation services for businesses of all sizes. We handle your cargo with care and deliver on time."
-            },
-            "local": {
-                "title": "Local Delivery",
-                "description": "Fast and efficient local delivery services within the region. Perfect for time-sensitive shipments."
-            },
-            "warehouse": {
-                "title": "Warehouse Logistics",
-                "description": "Comprehensive warehouse and logistics solutions to streamline your supply chain operations."
-            },
-            "insured": {
-                "title": "Insured Shipments",
-                "description": "All shipments are fully insured for your peace of mind. Your cargo is protected throughout transit."
-            }
-        },
-        "location": {
-            "title": "Our Location",
-            "subtitle": "Visit Our Headquarters",
-            "address": "Address:",
-            "addressText": "KUKULJANOVO, Kukuljanovo 176",
-            "hours": "Operating Hours:",
-            "hoursText": "Monday - Friday: 6:00 - 20:00 <br>Saturday: 7:00 AM - 3:00 PM<br>Sunday: Closed",
-            "serviceArea": "Service Area:",
-            "serviceAreaText": "Poslujemo na području Hrvatske i okolnom regijom."
-        },
-        "contact": {
-            "title": "Contact Us",
-            "subtitle": "Get In Touch",
-            "phone": "Phone:",
-            "email": "Email:",
-            "emergency": "Emergency Contact:",
-            "form": {
-                "name": "Full Name",
-                "email": "Email Address",
-                "phone": "Phone Number",
-                "subject": "Subject",
-                "message": "Message",
-                "submit": "Send Message"
-            },
-            "success": "Thank you for your message! We'll get back to you soon.",
-            "validation": {
-                "required": "Please fill in all required fields.",
-                "email": "Please enter a valid email address."
-            }
-        },
-        "footer": {
-            "company": "AB Transport",
-            "description": "Your trusted partner in transportation and logistics services.",
-            "quickLinks": "Quick Links",
-            "contactInfo": "Contact Info",
-            "copyright": "© {year} AB Transport. All rights reserved."
-        }
-    },
-    "hr": {
-        "nav": {
-            "home": "Početna",
-            "about": "O Nama",
-            "services": "Usluge",
-            "location": "Lokacija",
-            "contact": "Kontakt"
-        },
-        "hero": {
-            "title": "Pouzdan Prijevoz",
-            "subtitle": "Za Vaš Posao",
-            "description": "Profesionalne usluge prijevoza s posvećenošću izvrsnosti i isporuci na vrijeme",
-            "cta": "Kontaktirajte Nas"
-        },
-        "about": {
-            "title": "O AB Transport",
-            "paragraph1": "S godinama iskustva u prijevozništvu, AB Transport je izgradio reputaciju pouzdanosti, sigurnosti i izvanredne usluge. Naša mala flota omogućuje nam da pružamo personaliziranu pažnju svakoj pošiljci.",
-            "paragraph2": "Specijalizirani smo za regionalni i lokalni prijevoz, osiguravajući da vaša roba stigne na odredište sigurno i u planiranom vremenu. Naš tim profesionalnih vozača posvećen je održavanju najviših standarda usluge.",
-            "years": "Godine Iskustva",
-            "fleet": "Vozni Park",
-            "delivery": "Isporuka na Vrijeme"
-        },
-        "services": {
-            "title": "Naše Usluge",
-            "freight": {
-                "title": "Prijevoz Tereta",
-                "description": "Pouzdane usluge prijevoza tereta za tvrtke svih veličina. S vašim teretom postupamo pažljivo i dostavljamo ga na vrijeme."
-            },
-            "local": {
-                "title": "Lokalna Dostava",
-                "description": "Brze i učinkovite usluge lokalne dostave unutar regije. Savršeno za pošiljke osjetljive na vrijeme."
-            },
-            "warehouse": {
-                "title": "Skladišna Logistika",
-                "description": "Sveobuhvatna skladišna i logistička rješenja za poboljšanje vaših operacija opskrbnog lanca."
-            },
-            "insured": {
-                "title": "Osigurane Pošiljke",
-                "description": "Sve pošiljke su u potpunosti osigurane za vaš mir. Vaš teret je zaštićen tijekom cijelog prijevoza."
-            }
-        },
-        "location": {
-            "title": "Naša Lokacija",
-            "subtitle": "Posjetite Naše Sjedište",
-            "address": "Adresa:",
-            "addressText": "KUKULJANOVO, Kukuljanovo 176",
-            "hours": "Radno Vrijeme:",
-            "hoursText": "Ponedjeljak - Petak: 6:00 - 20:00<br>Subota: 7:00 - 15:00<br>Nedjelja: Zatvoreno",
-            "serviceArea": "Područje Usluge:",
-            "serviceAreaText": "Poslujemo na području Hrvatske i okolnom regijom."
-        },
-        "contact": {
-            "title": "Kontaktirajte Nas",
-            "subtitle": "Kontaktirajte Nas",
-            "phone": "Telefon:",
-            "email": "Email:",
-            "emergency": "Hitni Kontakt:",
-            "form": {
-                "name": "Ime i Prezime",
-                "email": "Email Adresa",
-                "phone": "Broj Telefona",
-                "subject": "Predmet",
-                "message": "Poruka",
-                "submit": "Pošalji Poruku"
-            },
-            "success": "Hvala na vašoj poruci! Javit ćemo vam se uskoro.",
-            "validation": {
-                "required": "Molimo popunite sva obavezna polja.",
-                "email": "Molimo unesite valjanu email adresu."
-            }
-        },
-        "footer": {
-            "company": "AB Transport",
-            "description": "Vaš pouzdani partner u prijevozu i logističkim uslugama.",
-            "quickLinks": "Brze Poveznice",
-            "contactInfo": "Kontakt Informacije",
-            "copyright": "© {year} AB Transport. Sva prava pridržana."
-        }
-    },
-    "it": {
-        "nav": {
-            "home": "Home",
-            "about": "Chi Siamo",
-            "services": "Servizi",
-            "location": "Posizione",
-            "contact": "Contatto"
-        },
-        "hero": {
-            "title": "Trasporti Affidabili",
-            "subtitle": "Per la Tua Azienda",
-            "description": "Servizi di trasporto professionali con un impegno per l'eccellenza e la consegna puntuale",
-            "cta": "Contattaci"
-        },
-        "about": {
-            "title": "Chi Siamo AB Transport",
-            "paragraph1": "Con anni di esperienza nel settore dei trasporti, AB Transport ha costruito una reputazione di affidabilità, sicurezza e servizio eccezionale. La nostra piccola flotta ci permette di fornire attenzione personalizzata a ogni spedizione.",
-            "paragraph2": "Ci specializziamo in trasporti regionali e locali, garantendo che le vostre merci raggiungano la destinazione in sicurezza e secondo programma. Il nostro team di autori professionisti è dedicato a mantenere i più alti standard di servizio.",
-            "years": "Anni di Esperienza",
-            "fleet": "Parco Veicoli",
-            "delivery": "Consegna Puntuale"
-        },
-        "services": {
-            "title": "I Nostri Servizi",
-            "freight": {
-                "title": "Trasporto Merci",
-                "description": "Servizi di trasporto merci affidabili per aziende di tutte le dimensioni. Gestiamo il vostro carico con cura e consegniamo puntualmente."
-            },
-            "local": {
-                "title": "Consegna Locale",
-                "description": "Servizi di consegna locale veloci ed efficienti nella regione. Perfetto per spedizioni sensibili al tempo."
-            },
-            "warehouse": {
-                "title": "Logistica Magazzino",
-                "description": "Soluzioni complete di magazzino e logistica per ottimizzare le operazioni della vostra catena di approvvigionamento."
-            },
-            "insured": {
-                "title": "Spedizioni Assicurate",
-                "description": "Tutte le spedizioni sono completamente assicurate per la vostra tranquillità. Il vostro carico è protetto durante tutto il trasporto."
-            }
-        },
-        "location": {
-            "title": "La Nostra Posizione",
-            "subtitle": "Visita la Nostra Sede",
-            "address": "Indirizzo:",
-            "addressText": "KUKULJANOVO, Kukuljanovo 176",
-            "hours": "Orari di Apertura:",
-            "hoursText": "Lunedì - Venerdì: 6:00 - 20:00<br>Sabato: 7:00 - 15:00<br>Domenica: Chiuso",
-            "serviceArea": "Area di Servizio:",
-            "serviceAreaText": "Poslujemo na području Hrvatske i okolnom regijom."
-        },
-        "contact": {
-            "title": "Contattaci",
-            "subtitle": "Contattaci",
-            "phone": "Telefono:",
-            "email": "Email:",
-            "emergency": "Contatto di Emergenza:",
-            "form": {
-                "name": "Nome Completo",
-                "email": "Indirizzo Email",
-                "phone": "Numero di Telefono",
-                "subject": "Oggetto",
-                "message": "Messaggio",
-                "submit": "Invia Messaggio"
-            },
-            "success": "Grazie per il tuo messaggio! Ti ricontatteremo presto.",
-            "validation": {
-                "required": "Per favore compila tutti i campi obbligatori.",
-                "email": "Per favore inserisci un indirizzo email valido."
-            }
-        },
-        "footer": {
-            "company": "AB Transport",
-            "description": "Il tuo partner affidabile nei servizi di trasporto e logistica.",
-            "quickLinks": "Link Rapidi",
-            "contactInfo": "Info Contatto",
-            "copyright": "© {year} AB Transport. Tutti i diritti riservati."
-        }
-    },
-    "de": {
-        "nav": {
-            "home": "Startseite",
-            "about": "Über Uns",
-            "services": "Dienstleistungen",
-            "location": "Standort",
-            "contact": "Kontakt"
-        },
-        "hero": {
-            "title": "Zuverlässiger Transport",
-            "subtitle": "Für Ihr Unternehmen",
-            "description": "Professionelle Transportdienstleistungen mit Engagement für Exzellenz und pünktliche Lieferung",
-            "cta": "Kontaktieren Sie Uns"
-        },
-        "about": {
-            "title": "Über AB Transport",
-            "paragraph1": "Mit Jahren Erfahrung in der Transportbranche hat AB Transport einen Ruf für Zuverlässigkeit, Sicherheit und herausragenden Service aufgebaut. Unsere kleine Flotte ermöglicht es uns, jede Sendung persönliche Aufmerksamkeit zu widmen.",
-            "paragraph2": "Wir spezialisieren uns auf regionalen und lokalen Transport und stellen sicher, dass Ihre Waren sicher und planmäßig ihr Ziel erreichen. Unser Team professioneller Fahrer ist der Aufrechterhaltung höchster Service-Standards verpflichtet.",
-            "years": "Jahre Erfahrung",
-            "fleet": "Fuhrpark",
-            "delivery": "Pünktliche Lieferung"
-        },
-        "services": {
-            "title": "Unsere Dienstleistungen",
-            "freight": {
-                "title": "Frachttransport",
-                "description": "Zuverlässige Frachttransportdienstleistungen für Unternehmen jeder Größe. Wir behandeln Ihre Fracht mit Sorgfalt und liefern pünktlich."
-            },
-            "local": {
-                "title": "Lokale Lieferung",
-                "description": "Schnelle und effiziente lokale Lieferdienste in der Region. Perfekt für zeitkritische Sendungen."
-            },
-            "warehouse": {
-                "title": "Lagerlogistik",
-                "description": "Umfassende Lager- und Logistiklösungen zur Optimierung Ihrer Lieferkettenoperationen."
-            },
-            "insured": {
-                "title": "Versicherte Sendungen",
-                "description": "Alle Sendungen sind vollständig versichert für Ihre peace of mind. Ihre Fracht ist während des gesamten Transports geschützt."
-            }
-        },
-        "location": {
-            "title": "Unser Standort",
-            "subtitle": "Besuchen Sie Unsere Zentrale",
-            "address": "Adresse:",
-            "addressText": "KUKULJANOVO, Kukuljanovo 176",
-            "hours": "Öffnungszeiten:",
-            "hoursText": "Montag - Freitag: 6:00 - 20:00 Uhr<br>Samstag: 7:00 - 15:00 Uhr<br>Sonntag: Geschlossen",
-            "serviceArea": "Servicegebiet:",
-            "serviceAreaText": "Poslujemo na području Hrvatske i okolnom regijom."
-        },
-        "contact": {
-            "title": "Kontaktieren Sie Uns",
-            "subtitle": "Kontaktieren Sie Uns",
-            "phone": "Telefon:",
-            "email": "Email:",
-            "emergency": "Notfallkontakt:",
-            "form": {
-                "name": "Vollständiger Name",
-                "email": "E-Mail-Adresse",
-                "phone": "Telefonnummer",
-                "subject": "Betreff",
-                "message": "Nachricht",
-                "submit": "Nachricht Senden"
-            },
-            "success": "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
-            "validation": {
-                "required": "Bitte füllen Sie alle erforderlichen Felder aus.",
-                "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
-            }
-        },
-        "footer": {
-            "company": "AB Transport",
-            "description": "Ihr vertrauenswürdiger Partner in Transport- und Logistikdienstleistungen.",
-            "quickLinks": "Schnelllinks",
-            "contactInfo": "Kontaktinformationen",
-            "copyright": "© {year} AB Transport. Alle Rechte vorbehalten."
-        }
-    }
-};
-
 // Language Management System
 class LanguageManager {
     constructor() {
         this.currentLang = localStorage.getItem('selectedLanguage') || 'en';
-        this.translations = translationsData;
+        this.translations = null; // Will be loaded asynchronously
         this.init();
     }
 
+    async loadTranslations() {
+        try {
+            console.log('Attempting to fetch translations...');
+            const response = await fetch('translations.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            console.log('Successfully fetched translations:', data);
+            this.translations = data;
+            // Re-apply language after translations are loaded
+            console.log('Applying initial language:', this.currentLang);
+            this.applyLanguage(this.currentLang);
+            // Set up the custom language selector dropdown AFTER translations are loaded
+            this.setupCustomLanguageSelectorDropdown();
+        } catch (error) {
+            console.error('Could not load translations:', error);
+            // Fallback to a minimal set of translations if fetch fails
+            this.translations = {
+                en: {
+                    nav: { home: "Home", about: "About Us", services: "Services", location: "Location", contact: "Contact" },
+                    hero: { title: "Reliable Transportation", subtitle: "For Your Business", description: "Professional trucking services", cta: "Get In Touch" },
+                    about: { title: "About A B Transport", paragraph1: "Error loading content.", paragraph2: "Please refresh the page.", years: "Years Experience", fleet: "Vehicle Fleet", delivery: "On-Time Delivery" },
+                    services: { title: "Our Services", freight: { title: "Freight Transportation", description: "Reliable services." }, local: { title: "Local Delivery", description: "Fast and efficient." }, warehouse: { title: "Warehouse Logistics", description: "Comprehensive solutions." }, insured: { title: "Insured Shipments", description: "Fully insured." } },
+                    footer: { company: "A B Transport", description: "Your trusted partner.", quickLinks: "Quick Links", contactInfo: "Contact Info", copyright: "© {year} A B Transport. All rights reserved." }
+                }
+            };
+            console.log('Applying fallback language:', this.currentLang);
+            this.applyLanguage(this.currentLang);
+            // Set up the custom language selector dropdown even in fallback mode
+            this.setupCustomLanguageSelectorDropdown();
+        }
+    }
+
     init() {
-        // Set up language selector
+        // Load translations from external file
+        this.loadTranslations();
+
+        // Set up the standard (hidden) language selector
         this.setupLanguageSelector();
-        
-        // Apply initial language
-        this.applyLanguage(this.currentLang);
         
         // Update document language
         document.documentElement.lang = this.currentLang;
@@ -347,9 +61,68 @@ class LanguageManager {
         }
     }
 
+    setupCustomLanguageSelectorDropdown() {
+        // Capture the correct 'this' context (the LanguageManager instance)
+        const self = this; 
+        const customSelects = document.querySelectorAll('.custom-select');
+        
+        customSelects.forEach(customSelect => {
+            const selectSelected = customSelect.querySelector('.select-selected');
+            const selectItems = customSelect.querySelector('.select-items');
+            const selectItemElements = customSelect.querySelectorAll('.select-item');
+            
+            // Toggle dropdown
+            selectSelected.addEventListener('click', function(e) {
+                e.stopPropagation();
+                closeAllSelects(this);
+                selectItems.classList.toggle('select-hide');
+            });
+            
+            // Handle item selection
+            selectItemElements.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    
+                    const value = this.getAttribute('data-value');
+                    const flagSrc = this.querySelector('.flag-icon').src;
+                    const text = this.querySelector('span').textContent;
+                    
+                    // Update selected display
+                    selectSelected.querySelector('.flag-icon').src = flagSrc;
+                    selectSelected.querySelector('span').textContent = text; // Corrected selector from '.span' to 'span'
+                    
+                    // Close dropdown
+                    selectItems.classList.add('select-hide');
+                    
+                    // Switch language using the captured context
+                    if (self) {
+                        self.switchLanguage(value);
+                    }
+                });
+            });
+        });
+        
+        // Close all dropdowns when clicking outside
+        document.addEventListener('click', closeAllSelects);
+        
+        function closeAllSelects(exceptThis) {
+            const selectItems = document.querySelectorAll('.select-items');
+            const selectSelected = document.querySelectorAll('.select-selected');
+            
+            selectItems.forEach(selectItem => {
+                if (exceptThis && exceptThis.nextElementSibling === selectItem) {
+                    return;
+                }
+                selectItem.classList.add('select-hide');
+            });
+        }
+    }
+
     switchLanguage(lang) {
+        console.log(`Switching language to: ${lang}`);
         this.currentLang = lang;
         localStorage.setItem('selectedLanguage', lang);
+        console.log('Current translations object:', this.translations); // Log the state of translations
         this.applyLanguage(lang);
         document.documentElement.lang = lang;
         
@@ -358,11 +131,21 @@ class LanguageManager {
     }
 
     applyLanguage(lang) {
+        console.log(`Applying language: ${lang}. Current translations:`, this.translations);
+        // Don't apply if translations haven't loaded yet
+        if (!this.translations) {
+            console.warn('Translations not yet loaded. Retrying in 100ms...');
+            setTimeout(() => this.applyLanguage(lang), 100);
+            return;
+        }
+
         const elements = document.querySelectorAll('[data-translate]');
+        console.log(`Found ${elements.length} elements to translate.`);
         elements.forEach(element => {
             const key = element.getAttribute('data-translate');
             const translation = this.getTranslation(key, lang);
             if (translation) {
+                console.log(`Translating element with key "${key}" to: "${translation}"`);
                 if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                     element.placeholder = translation;
                 } else {
@@ -373,6 +156,8 @@ class LanguageManager {
                         element.textContent = translation;
                     }
                 }
+            } else {
+                console.warn(`No translation found for key: ${key} in language: ${lang}`);
             }
         });
 
@@ -828,59 +613,3 @@ window.addEventListener('scroll', debouncedScrollHandler);
 
 // Export language manager for global access (if needed)
 window.languageManager = languageManager;
-
-// Custom Language Selector with Flag Images
-document.addEventListener('DOMContentLoaded', function() {
-    const customSelects = document.querySelectorAll('.custom-select');
-    
-    customSelects.forEach(customSelect => {
-        const selectSelected = customSelect.querySelector('.select-selected');
-        const selectItems = customSelect.querySelector('.select-items');
-        const selectItemElements = customSelect.querySelectorAll('.select-item');
-        
-        // Toggle dropdown
-        selectSelected.addEventListener('click', function(e) {
-            e.stopPropagation();
-            closeAllSelects(this);
-            selectItems.classList.toggle('select-hide');
-        });
-        
-        // Handle item selection
-        selectItemElements.forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.stopPropagation();
-                
-                const value = this.getAttribute('data-value');
-                const flagSrc = this.querySelector('.flag-icon').src;
-                const text = this.querySelector('span').textContent;
-                
-                // Update selected display
-                selectSelected.querySelector('.flag-icon').src = flagSrc;
-                selectSelected.querySelector('span').textContent = text;
-                
-                // Close dropdown
-                selectItems.classList.add('select-hide');
-                
-                // Switch language
-                if (window.languageManager) {
-                    window.languageManager.switchLanguage(value);
-                }
-            });
-        });
-    });
-    
-    // Close all dropdowns when clicking outside
-    document.addEventListener('click', closeAllSelects);
-    
-    function closeAllSelects(exceptThis) {
-        const selectItems = document.querySelectorAll('.select-items');
-        const selectSelected = document.querySelectorAll('.select-selected');
-        
-        selectItems.forEach(selectItem => {
-            if (exceptThis && exceptThis.nextElementSibling === selectItem) {
-                return;
-            }
-            selectItem.classList.add('select-hide');
-        });
-    }
-});
